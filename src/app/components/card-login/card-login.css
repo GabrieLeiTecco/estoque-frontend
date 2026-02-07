@@ -1,0 +1,119 @@
+.fundo {
+    background-image: url('/public/fundo.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid purple;
+}
+
+.card {
+    margin: 16.2vh auto auto auto;
+    width: 46vw;
+    height: 65vh;
+    background-image: none;
+    box-shadow: 0px 0px 5vw 0.1vw black;
+}
+
+.img-login {
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 20vw;
+    height: 64vh;
+}
+
+
+/* FORMULÁRIO */
+.title-form {
+    text-align: center;
+    margin: 9vh auto 3vw auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+}
+
+.login-area {
+    margin: -1px auto auto -1px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    background-color: #8b58c0;
+    height: 65.1vh;
+}
+
+.input-pass,
+.input-user {
+    display: block;
+    width: 18vw;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    background-position: 0.2vw 0.3vw;
+    background-repeat: no-repeat;
+    background-size: 1.8vw;
+    padding-left: 2.4vw;
+    font-size: 1.3vw;
+}
+
+.btn-form {
+    display: block;
+    margin: 2vw auto 0.5vw auto;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.2vw;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    background-color: #523473;
+    border: none;
+    color: white;
+}
+
+.btn-form:disabled {
+    background-color: lightgray;
+}
+
+.a-criar {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+    font-style: italic;
+    user-select: none;
+}
+
+.input-user {
+    background-image: url('/public/icon-usu.png');
+    margin: auto auto 1vw auto;
+}
+
+.input-pass {
+    background-image: url('/public/icon-pass.png');
+    margin: auto auto 0 auto;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.3;
+    color: black;
+    font-family: "Nunito", sans-serif;
+}
+
+.error-slot {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 14vw;
+    border-radius: 0.2vw;
+    height: 1vw;
+}
+
+.errorMessage {
+    background-color: #523473;
+    color: white;
+    font-style: italic;
+    font-size: 0.8vw;
+}
