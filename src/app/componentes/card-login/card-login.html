@@ -1,0 +1,88 @@
+<!--
+  TEMPLATE DO CARD DE LOGIN
+
+  Estrutura:
+  - Fundo da página
+  - Card central
+  - Área de login (formulário)
+  - Área de imagem ilustrativa
+-->
+
+<div class="fundo">
+
+  <div class="card">
+
+    <div class="row align-items-center">
+
+      <!-- ================= ÁREA DO FORMULÁRIO ================= -->
+      <div class="login-area col">
+
+        <p class="title-form">
+          ORGANIZE SEU ESTOQUE
+        </p>
+
+        <form
+          [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()"
+          novalidate
+        >
+
+          <!-- Campo usuário -->
+          <input
+            class="input-user form-control"
+            type="text"
+            formControlName="username"
+            placeholder="USUÁRIO"
+            maxlength="30"
+          />
+
+          <!-- Campo senha -->
+          <input
+            class="input-pass form-control"
+            type="password"
+            formControlName="password"
+            placeholder="••••••••"
+            maxlength="20"
+          />
+
+          <!-- Mensagem de erro -->
+          <div class="error-slot">
+            @if (errorMessage) {
+              <p class="errorMessage">
+                {{ errorMessage }}
+              </p>
+            }
+          </div>
+
+          <!-- Botão submit -->
+          <button
+            class="btn-form btn"
+            type="submit"
+            [disabled]="loginForm.invalid"
+          >
+            ENTRAR
+          </button>
+
+          <!-- Link de criação de conta -->
+          <a
+            class="a-criar"
+            routerLink="/cadastro"
+          >
+            Ou crie uma conta
+          </a>
+
+        </form>
+      </div>
+
+      <!-- ================= ÁREA DA IMAGEM ================= -->
+      <div class="img-area col">
+        <img
+          class="img-login"
+          src="public/img-login.png"
+          alt="Imagem ilustrativa de login"
+        />
+      </div>
+
+    </div>
+  </div>
+</div>
